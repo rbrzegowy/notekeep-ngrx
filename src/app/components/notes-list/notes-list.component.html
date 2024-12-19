@@ -1,0 +1,15 @@
+<h2>Lista notatek</h2>
+<section class="list">
+  @for (note of notes$ | async; track note.id) {
+  <div class="note" [style.backgroundColor]="note.color">
+    <h4>{{ note.title }}</h4>
+    <div class="content">{{ note.content }}</div>
+    <div class="created">{{ note.createdDate }}</div>
+    <div class="tags">{{ note.tags }}</div>
+    <div class="actions">
+      <button [routerLink]="['/edit', note.id]">Edytuj</button>
+      <button (click)="onNoteDelete(note.id)">Usuń</button>
+    </div>
+  </div>
+  }
+</section>

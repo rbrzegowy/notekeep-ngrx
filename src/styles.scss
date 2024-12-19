@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #fdbb2d, #22c1c3);
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: #fff;
+  margin-right: 10px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #eaeaea;
+  }
+}
