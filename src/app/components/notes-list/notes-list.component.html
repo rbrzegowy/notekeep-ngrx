@@ -4,8 +4,12 @@
   <div class="note" [style.backgroundColor]="note.color">
     <h4>{{ note.title }}</h4>
     <div class="content">{{ note.content }}</div>
-    <div class="created">{{ note.createdDate }}</div>
-    <div class="tags">{{ note.tags }}</div>
+    <div class="created">{{ note.createdDate | date : "short" }}</div>
+    <div class="tags">
+      @for(tag of note.tags.split(','); track tag){
+      <span class="tag">{{ tag }}</span>
+      }
+    </div>
     <div class="actions">
       <button [routerLink]="['/edit', note.id]">Edytuj</button>
       <button (click)="onNoteDelete(note.id)">Usuń</button>

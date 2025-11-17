@@ -6,12 +6,17 @@ body {
 
 button {
   padding: 5px 10px;
-  border: 1px solid #aaa;
+  border: 1px solid #aaaaaa7a;
   background: #fff;
   margin-right: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
+  transition: scale 0.15s ease-out;
 
   &:hover {
     background-color: #eaeaea;
+  }
+
+  &:active {
+    scale: 0.95;
   }
 }

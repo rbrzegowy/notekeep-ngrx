@@ -23,7 +23,7 @@ export class NoteFormComponent {
     notificationDate: null
   }
 
-  getNoteOnId = effect(() => {
+  getNoteOnIdChange = effect(() => {
     const id = this.id()
     if (!id) {
       return
