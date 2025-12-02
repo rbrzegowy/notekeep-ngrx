@@ -6,11 +6,10 @@ import { Note } from '../../models/note.models'
 import { RouterLink } from '@angular/router'
 
 @Component({
-  selector: 'app-notes-list',
-  standalone: true,
-  imports: [],
-  templateUrl: './notes-list.component.html',
-  styleUrl: './notes-list.component.scss'
+    selector: 'app-notes-list',
+    imports: [],
+    templateUrl: './notes-list.component.html',
+    styleUrl: './notes-list.component.scss'
 })
 export class NotesListComponent {
 

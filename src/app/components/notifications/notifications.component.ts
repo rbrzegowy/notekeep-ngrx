@@ -5,11 +5,10 @@ import { Notifications } from '../../models/notifications.model'
 import { AsyncPipe } from '@angular/common'
 
 @Component({
-  selector: 'app-notifications',
-  standalone: true,
-  imports: [AsyncPipe, TimeoutSpinnerDirective],
-  templateUrl: './notifications.component.html',
-  styleUrl: './notifications.component.scss'
+    selector: 'app-notifications',
+    imports: [AsyncPipe, TimeoutSpinnerDirective],
+    templateUrl: './notifications.component.html',
+    styleUrl: './notifications.component.scss'
 })
 export class NotificationsComponent {
   notifications$!: Observable<Notifications>

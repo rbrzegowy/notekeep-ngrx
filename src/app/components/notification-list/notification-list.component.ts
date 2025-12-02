@@ -4,11 +4,10 @@ import { Component } from '@angular/core'
 import { Observable } from 'rxjs'
 
 @Component({
-  selector: 'app-notification-list',
-  standalone: true,
-  imports: [],
-  templateUrl: './notification-list.component.html',
-  styleUrl: './notification-list.component.scss'
+    selector: 'app-notification-list',
+    imports: [],
+    templateUrl: './notification-list.component.html',
+    styleUrl: './notification-list.component.scss'
 })
 export class NotificationListComponent {
 
