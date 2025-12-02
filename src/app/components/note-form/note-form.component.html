@@ -1,13 +1,7 @@
-<h3>Nowa notatka</h3>
-<div>
-  <span>Tytuł:</span>
-  <input type="text" name="title" [(ngModel)]="note.title" />
-</div>
-<div><span>Treść:</span> <textarea [(ngModel)]="note.content"></textarea></div>
-<div><span>Kolor:</span> <input type="color" [(ngModel)]="note.color" /></div>
-<div><span>Tagi:</span> <input type="text" [(ngModel)]="note.tags" /></div>
-<div>
-  <span>Data powiadomienia:</span>
-  <input type="datetime-local" [(ngModel)]="note.notificationDate" />
-</div>
+<h2>Nowa notatka</h2>
+<div><span>Tytuł:</span> <input type="text" name="title" /></div>
+<div><span>Treść:</span> <textarea></textarea></div>
+<div><span>Kolor:</span> <input type="color" /></div>
+<div><span>Tagi:</span> <input type="text" /></div>
+<div><span>Data powiadomienia:</span><input type="datetime-local" /></div>
 <div><button (click)="onSave()">Zapisz</button></div>

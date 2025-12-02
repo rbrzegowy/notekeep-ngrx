@@ -6,8 +6,4 @@ import { NotificationListComponent } from './components/notification-list/notifi
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'new', component: NoteFormComponent },
-  { path: 'edit/:id', component: NoteFormComponent },
-  { path: 'list', component: NotesListComponent },
-  { path: 'notifications', component: NotificationListComponent },
 ]

@@ -8,15 +8,10 @@ import { RouterLink } from '@angular/router'
 @Component({
   selector: 'app-notes-list',
   standalone: true,
-  imports: [AsyncPipe, RouterLink, DatePipe],
+  imports: [],
   templateUrl: './notes-list.component.html',
   styleUrl: './notes-list.component.scss'
 })
 export class NotesListComponent {
 
-  protected notes$!: Observable<Notes>
-
-  onNoteDelete(id: Note['id']) {
-    throw new Error('Method not implemented.')
-  }
 }

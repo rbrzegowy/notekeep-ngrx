@@ -6,11 +6,10 @@ import { Observable } from 'rxjs'
 @Component({
   selector: 'app-notification-list',
   standalone: true,
-  imports: [AsyncPipe],
+  imports: [],
   templateUrl: './notification-list.component.html',
   styleUrl: './notification-list.component.scss'
 })
 export class NotificationListComponent {
-  protected notifications$!: Observable<Notification[]>
 
 }

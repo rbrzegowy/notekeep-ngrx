@@ -1,9 +1,4 @@
 <h2>Powiadomienia</h2>
 <section class="list">
-  @for (notification of notifications$ | async; track $index) {
-  <div class="note">
-    <h4>{{ notification.message }}</h4>
-    <div class="content">{{ notification.showAs }}</div>
-  </div>
-  }
+  <div class="element">Wiadomość</div>
 </section>

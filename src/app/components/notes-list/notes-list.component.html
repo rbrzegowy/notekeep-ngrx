@@ -1,19 +1,19 @@
 <h2>Lista notatek</h2>
 <section class="list">
-  @for (note of notes$ | async; track note.id) {
-  <div class="note" [style.backgroundColor]="note.color">
-    <h4>{{ note.title }}</h4>
-    <div class="content">{{ note.content }}</div>
-    <div class="created">{{ note.createdDate | date : "short" }}</div>
+  <!-- notes - przykładowa notka -->
+  <div class="note">
+    <h4>Tytuł 1</h4>
+    <div class="content">Treść notatki 1</div>
     <div class="tags">
-      @for(tag of note.tags.split(','); track tag){
-      <span class="tag">{{ tag }}</span>
-      }
+      <span class="tag">tag1</span>
+      <span class="tag">tag2</span>
     </div>
-    <div class="actions">
-      <button [routerLink]="['/edit', note.id]">Edytuj</button>
-      <button (click)="onNoteDelete(note.id)">Usuń</button>
+    <div class="footer">
+      <div class="created">data</div>
+      <div class="actions">
+        <button>Edytuj</button>
+        <button>Usuń</button>
+      </div>
     </div>
   </div>
-  }
 </section>
