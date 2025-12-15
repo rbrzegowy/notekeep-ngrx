@@ -5,10 +5,10 @@ import { UUID } from '../../models/uuid.model'
 import { NewNote } from '../../models/new-note.model'
 
 @Component({
-    selector: 'app-note-form',
-    imports: [],
-    templateUrl: './note-form.component.html',
-    styleUrl: './note-form.component.scss'
+  selector: 'app-note-form',
+  imports: [FormsModule],
+  templateUrl: './note-form.component.html',
+  styleUrl: './note-form.component.scss'
 })
 export class NoteFormComponent {
 
@@ -22,6 +22,7 @@ export class NoteFormComponent {
   }
 
   onSave() {
+    console.log(this.note)
     // generowanie id: crypto.randomUUID()
   }
 }
