@@ -1,0 +1,41 @@
+<h2>Ustawienia</h2>
+<div class="theme">
+  <span>Motyw:</span>
+  <input
+    type="radio"
+    id="dark"
+    name="theme"
+    value="dark"
+    [(ngModel)]="settings.theme"
+  />
+  <label for="dark">Ciemny</label>
+  <input
+    type="radio"
+    id="light"
+    name="theme"
+    value="light"
+    [(ngModel)]="settings.theme"
+  />
+  <label for="light">Jasny</label>
+  <input
+    type="radio"
+    id="system"
+    name="theme"
+    value="system"
+    [(ngModel)]="settings.theme"
+  />
+  <label for="system">Systemowy</label>
+</div>
+<div>
+  <span>Powiadomienia:</span>
+  <input
+    type="checkbox"
+    name="title"
+    [(ngModel)]="settings.notificationsEnabled"
+  />
+</div>
+<div>
+  <span>Autozapis:</span>
+  <input type="checkbox" name="title" [(ngModel)]="settings.autoSave" />
+</div>
+<div><button (click)="onSave()">Zapisz</button></div>
